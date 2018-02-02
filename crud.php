@@ -7,7 +7,7 @@ function SingleQuery($queri)
 
     if(mysql_query($queri))
     {
-        return "Success\n";
+        return "";
     }
 
 #    else

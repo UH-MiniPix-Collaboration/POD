@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import os
+import time
 import datetime
 import pymysql as sql
 
@@ -36,3 +37,4 @@ def get_pi_temp():
 if __name__ == "__main__":
     
     print (str(get_timestamp()[0]),str(get_timestamp()[1]),str(get_pi_temp()))
+    time.sleep(3)
