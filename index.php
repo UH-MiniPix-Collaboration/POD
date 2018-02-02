@@ -13,6 +13,8 @@ include "crud.php";
 #$result = ExecuteQuery($sql, "Table Created Successfully\n");
 #$result = DropTable("pi_temps");
 
+$py_output = system("python3 ~/Desktop/POD/cpu_temp.py");
+
 $sql = "INSERT INTO pi_temps(date, time, temp) VALUES ('2018-30-01', '9:57:43', '49.5')";
 
 $result = SingleQuery($sql);

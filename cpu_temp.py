@@ -5,17 +5,17 @@ import datetime
 import pymysql as sql
 
 # Prepare cursor object
-cursor = db.cursor()
+#cursor = db.cursor()
 
 # Prepare SQL Query
-query = "INSERT INTO cpu(temperature, timestamp, date) values (" + get_pi_temp() + ", " + get_timestamp()[1] + ", " + get_timestamp()[0] + ");"
+#query = "INSERT INTO cpu(temperature, timestamp, date) values (" + get_pi_temp() + ", " + get_timestamp()[1] + ", " + get_timestamp()[0] + ");"
 
 # Try and execute the SQL command
-try: 
-    cursor.execute(sql)
-    db.commit()
-except: 
-    db.rollback()
+#try: 
+#    cursor.execute(sql)
+#    db.commit()
+#except: 
+#    db.rollback()
  
 def get_timestamp():
     
@@ -35,5 +35,4 @@ def get_pi_temp():
 
 if __name__ == "__main__":
     
-    print (str(get_timestamp()[0]), str(get_timestamp()[1]), str(get_pi_temp()))
-
+    print (str(get_timestamp()[0]),str(get_timestamp()[1]),str(get_pi_temp()))
