@@ -16,7 +16,7 @@ include "crud.php";
 while(TRUE)
 {
 
-    $py_output = system("python3 ~/Desktop/POD/cpu_temp.py");
+    $py_output = system("python3 ../src/cpu_temp.py");
     $vars = explode(" ", $py_output);
     $date = $vars[0];
     $time = $vars[1];
